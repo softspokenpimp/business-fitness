@@ -1,0 +1,178 @@
+<!-- 
+For this assignment, you'll have free reign creatively - we want to see your creativity shine! Your task here 
+is to create a small website for a local gym (whatever activity you'd like to choose, feel free - rock climbing, 
+swimming, weight lifting, yoga, golf, whatever, as long as it's athleticish and something a local business in your 
+community would actually offer). 
+The site should have a form, a navbar and footer, should use either CSS Grid or Bootstrap somewhere on the site, 
+and several images from Unsplash or similar. (Please source your images legally.)  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="gym-style.css">
+<script src="https://kit.fontawesome.com/54930b1501.js" crossorigin="anonymous"></script>
+<title>Business Fitness</title>
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light py-2 text-dark fixed-top bg-light">
+        <div class="container">
+            <a href="#" class="navbar-brand px-3" style="background-color: #89D5D2;">Business Fitness</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                        <li class="nav-items">
+                           <a href="gym-landing.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-items">
+                           <a href="gym-about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-items">
+                            <a href="gym-sign-in.html" class="nav-link">Sign In</a>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Headline Section -->
+    <section class="text-start bg-dark">
+        <div class="container p-0">
+            <div class=" my-5 py-3 row-md col-sm bg-dark text-light text-center">
+                <div class=" mx-3  container container-fluid">
+                    <h2><h1 class="light-text">ABOUT</h1><span class="tiny-text highlight-text">THE CREATOR OF BUSINESS FITNESS </span></h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Intro Bit -->
+    <section class="text-center d-flex align-items-center py-5">
+        <div class="container container-fluid mx-10 py-5 px-5 info-intro d-flex align-items-center text-center">
+            <div class="info-intro-header text-center">
+                <h2 class="pb-2 border-bottom border-1"><span class="thin-text">THE ORGINIAL</span>  IDEA</h2><br>
+                <p class="px-10">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique tempora, accusamus ea, 
+                    dolorem debitis adipisci quasi quaerat, culpa ab accusantium quibusdam provident? Nobis at ipsa doloremque accusamus eius eum est!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia magnam numquam nobis ratione 
+                    minus eum, recusandae voluptates atque natus autem eaque. Mollitia ex aperiam reprehenderit, sit quisquam alias ratione aut.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Activities Panel -->
+    <section class="text-light mb-5 p-3 pt-lg-10 p-lg-0 text-center text-sm-start" style="background-color: #008080;">
+        <div class="container mt-10 ">
+            <div class="d-sm-flex align-items-center justify-content-evenly">
+                <img src="static/about-img.jpg" alt="Group of Business proffessionals doing yoga" class="img-fluid col-lg-6 col-md-12">
+
+                <div class="info-intro-text mx-3  px-5 text-center">
+                <h2 class="pb-2 border-bottom border-1"> MARILYN SMITH</h2><br>
+                <p class="px-10">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio vel numquam aperiam veniam incidunt maxime 
+                    voluptatem, sequi quo accusamus necessitatibus dolores ipsum pariatur aspernatur magnam rerum, quae sint, optio reprehenderit.
+                </p>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    <!-- Sign up Form Section -->
+    <section class="sticky-top  text-dark container-fluid d-flex justify-content-center ">
+        <div class="btn-toolbar my-3" role="toolbar" aria-label="Toolbar with button groups">
+            <!-- sign up now text -->
+            <div class="btn-group mx-2 d-flex align-items-center justify-content-center" role="group" aria-label="First group">
+                <h3 class="mt-1">Sign Up Now!</h3>
+            </div>
+            <!-- Sign up: name -->
+            <div class="input-group mx-2">
+            <div class="input-group-prepend">
+                <div class="input-group-text btn-custom mx-2" id="btnGroupAddon">Name</div>
+            </div>
+            <input type="text" class="form-control form-rounded" placeholder="Full Name" aria-label="Full Name" aria-describedby="btnGroupAddon">
+            </div>
+            <!-- Sign up: phone -->
+            <div class="input-group mx-2">
+            <div class="input-group-prepend">
+                <div class="input-group-text btn-custom mx-2" id="btnGroupAddon">Phone</div>
+            </div>
+            <input type="text" class="form-control form-rounded" placeholder="(123) 456-7890" aria-label="(123) 456-7890" aria-describedby="btnGroupAddon">
+            </div>
+            <!-- Sign up: email -->
+            <div class="input-group mx-2">
+            <div class="input-group-prepend">
+                <div class="input-group-text btn-custom mx-2" id="btnGroupAddon">E-Mail</div>
+            </div>
+            <input type="text" class="form-control form-rounded" placeholder="example@example.com" aria-label="example@example.com" aria-describedby="btnGroupAddon">
+            </div>
+            <!-- Sign up: submit  -->
+            <div class="btn-group mx-2" role="group" aria-label="First group">
+            <button type="button" class="btn btn-custom">Submit</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER SECTIONS -->
+    <footer class="text-dark text-center d-flex align-items-center justify-content-center mt-5 pt-5 pb-3">
+        <div class=" mx-10 mt-5 px-5 info-intro d-flex align-items-center text-center">
+            <div class="row d-flex justify-content-center">
+                <h2 class="col-12 d-flex justify-content-center">BUSINESS <span class="highlight-text">&nbspFITNESS</span></h2><br>
+                <p>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </p>
+                <p> &copy;Sierra Bounds2022 | Photos obtained from iStock.com | Coding Temple</p> 
+            </div>
+        </div>
+    </footer>
+
+    <!-- Subfooter -->
+    <div class="container-fluid d-inline-flex align-items-end justify-content-center px-0 m-0 ">
+        <div class="px-0 d-flex justify-content-center overflow-hidden">
+            <img src="static/gallery/gal6.jpg" class="foot-img d-block img-fluid" alt="">
+            <img src="static/gallery/gal5.jpg" class="foot-img d-block img-fluid" alt="">
+            <img src="static/gallery/gal4.jpg" class="foot-img d-block img-fluid" alt="">
+            <img src="static/gallery/gal3.jpg" class="foot-img d-block img-fluid" alt="">
+            <img src="static/gallery/gal2.jpg" class="foot-img d-block img-fluid" alt="">
+            <img src="static/gallery/gal1.jpg" class="foot-img d-block img-fluid" alt="">
+            <img src="static/gallery/gal6.jpg" class="foot-img d-block img-fluid" alt="">
+            <img src="static/gallery/gal5.jpg" class="foot-img d-block img-fluid" alt="">
+            <img src="static/gallery/gal4.jpg" class="foot-img d-block img-fluid" alt="">
+            <img src="static/gallery/gal3.jpg" class="foot-img d-block img-fluid" alt="">
+            <img src="static/gallery/gal2.jpg" class="foot-img d-block img-fluid" alt="">
+            <img src="static/gallery/gal1.jpg" class="foot-img d-block img-fluid" alt="">
+            <img src="static/gallery/gal6.jpg" class="foot-img d-block img-fluid" alt="">
+            <img src="static/gallery/gal5.jpg" class="foot-img d-block img-fluid" alt="">
+            <img src="static/gallery/gal4.jpg" class="foot-img d-block img-fluid" alt="">
+            <img src="static/gallery/gal3.jpg" class="foot-img d-block img-fluid" alt="">
+            <img src="static/gallery/gal2.jpg" class="foot-img d-block img-fluid" alt="">
+            <img src="static/gallery/gal1.jpg" class="foot-img d-block img-fluid" alt="">
+            <img src="static/gallery/gal5.jpg" class="foot-img d-block img-fluid" alt="">
+            <img src="static/gallery/gal4.jpg" class="foot-img d-block img-fluid" alt="">
+            <img src="static/gallery/gal3.jpg" class="foot-img d-block img-fluid" alt="">
+            <img src="static/gallery/gal2.jpg" class="foot-img d-block img-fluid" alt="">
+            <img src="static/gallery/gal1.jpg" class="foot-img d-block img-fluid" alt="">
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
